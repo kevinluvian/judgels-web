@@ -12,12 +12,20 @@ const CarouselContent = ({ header, subheader, headerContent, image }) => (
           {subheader}
         </Header.Subheader>
       </Header>
+      {headerContent}
     </Grid.Column>
     <Grid.Column width={4} verticalAlign='middle'>
       <Image src={image} />
     </Grid.Column>
   </Grid>
 )
+
+CarouselContent.propTypes = {
+  header: React.PropTypes.string,
+  subheader: React.PropTypes.string,
+  headerContent: React.PropTypes.element,
+  image: React.PropTypes.string
+}
 
 const HomeView = () => {
   var settings = {
