@@ -7,7 +7,6 @@ import LinkedClientsViewContainer from 'containers/LinkedClientsViewContainer'
 export class BaseLayout extends React.Component {
   render () {
     const { children, location } = this.props
-    console.log(location.pathname)
     return (
       <CoreLayout
         header={<HeaderContainer />}
